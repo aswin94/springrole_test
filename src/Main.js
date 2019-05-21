@@ -14,7 +14,7 @@ class Main extends React.PureComponent {
         super();
 
         this.pageSize = 5;
-        this.pagesCount = Math.ceil(100 / this.pageSize);
+        this.pagesCount = Math.ceil(500 / this.pageSize);
 
         this.state = {
             currentPage: 0,
@@ -127,7 +127,7 @@ class Main extends React.PureComponent {
 
                         <div className="pagination-wrapper">
 
-                            <Pagination aria-label="Page navigation example">
+                            <Pagination aria-label="Page navigation example" className="nav-style">
 
                                 <PaginationItem disabled={currentPage <= 0}>
 
