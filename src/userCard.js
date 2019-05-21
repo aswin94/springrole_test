@@ -11,25 +11,12 @@ class userCard extends Component {
     constructor(props) {
         super(props);
 
-        // const { user } = this.props.location.state;
-
         this.state = {
             user: this.props.location.state.data,
         };
     }
 
-    // componentDidMount() {
-    //     let dataAPI = 'http://demo9197058.mockable.io/users';
-    //     axios.get(dataAPI).then(res => {
-    //         console.log(res.data);
-    //         this.setState({tableData: res.data})
-    //     });
-    // }
-
-
     render(){
-        // const {id} = this.props.match.params.id;
-        console.log("data:",this.state.user);
         return(
             <div>
                 <div>
